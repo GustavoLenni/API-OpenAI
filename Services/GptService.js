@@ -11,6 +11,10 @@ async function GerarResposta(pergunta){
             model: "gpt-4o-mini",
             store: true,
             messages: [
+                // como o modelo deve agir
+                {"role": "system", "content": "Você é um profissional de ti, e tem que responder a pergunta em 3 palavras apenas "},
+
+                // pergunta que o usuario vai fazer
                 {"role": "user", "content": pergunta}
             ]
         });

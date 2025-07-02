@@ -1,6 +1,8 @@
 const GptService = require('../Services/GptService');
 
 async function GptController(req,res){
+    // dado enviado no corpo da requisição
+    // (entrada do usuario) 
     const {pergunta} = req.body;
 
     // Tratamento de Erro da pergunta 
